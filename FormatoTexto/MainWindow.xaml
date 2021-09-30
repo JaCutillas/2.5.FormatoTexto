@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="WordKiller"
         Height="272"
-        Width="839">
+        Width="839"
+        Icon="assets/Killer.ico">
 
     <Grid HorizontalAlignment="Left"
           Height="412"
@@ -32,7 +33,8 @@
                    Width="749"
                    Height="50"
                    VerticalAlignment="Center"
-                   FontSize="16" />
+                   FontSize="16"
+                   TextAlignment="Center"/>
 
         <TextBox x:Name="EntradaTextBox"
                  HorizontalAlignment="Left"
