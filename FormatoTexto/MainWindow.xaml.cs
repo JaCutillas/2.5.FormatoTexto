@@ -31,17 +31,38 @@ namespace FormatoTexto
             SalidaTextBlock.Text = EntradaTextBox.Text;
         }
 
-        private void NegritaCheckBoxChecked(object sender, RoutedEventArgs e)
+        private void NegritaCheckBoxCliked(object sender, RoutedEventArgs e)
         {
-            SalidaTextBlock.FontWeight = FontWeights.Bold;
+            if (NegritaCheckBox.IsChecked == true)
+            {
+                SalidaTextBlock.FontWeight = FontWeights.Bold;
+            }
+            else
+            {
+                SalidaTextBlock.FontWeight = FontWeights.Normal;
+            }
         }
-        private void CursivaCheckBoxChecked(object sender, RoutedEventArgs e)
-        {
-            SalidaTextBlock.FontStyle = FontStyles.Italic;
+        private void CursivaCheckBoxCliked(object sender, RoutedEventArgs e)
+        {  
+            if (CursivaCheckBox.IsChecked == true)
+            {
+                SalidaTextBlock.FontStyle = FontStyles.Italic;
+            }
+            else
+            {
+                SalidaTextBlock.FontStyle = FontStyles.Normal;
+            }
         }
-        private void CoolCheckBoxChecked(object sender, RoutedEventArgs e)
+        private void CoolCheckBoxCliked(object sender, RoutedEventArgs e)
         {
-            SalidaTextBlock.FontFamily = new FontFamily("Comic Sans MS");
+            if (CoolCheckBox.IsChecked == true)
+            {
+                SalidaTextBlock.FontFamily = new FontFamily("Comic Sans MS");
+            }
+            else
+            {
+                SalidaTextBlock.FontFamily = new FontFamily("Segoe UI");
+            }
         }
 
         private void AzulRadioButtonChecked(object sender, RoutedEventArgs e)
